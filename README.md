@@ -1,0 +1,2 @@
+# lidar_monitor_ros
+rosでlidar搭載亀ロボットを移動制御して、lidarのデータ取得するデモ
