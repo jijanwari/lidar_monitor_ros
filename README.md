@@ -146,6 +146,10 @@ GazeboのLiDARデータをROS 2が読める形式に変換します。
 ```
 ros2 run ros_gz_bridge parameter_bridge "/lidar@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan" --ros-args -r /lidar:=/scan &
 ```
+ノード起動
+```
+ros2 run lidar_monitor_pkg lidar_monitor
+```
 	
 ## 4.3. 移動制御ノード起動
 新しく起動したターミナルの場合、以下の通り ワークスペースへ移動して環境変数を設定する
