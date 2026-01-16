@@ -9,6 +9,8 @@ cd lidar_monitor_ros
 ```
 ```
 export ROS_WS_ROOT="$PWD"
+```
+```
 mkdir $ROS_WS_ROOT/src
 cd $ROS_WS_ROOT/src
 ```
@@ -44,6 +46,8 @@ source /opt/ros/jazzy/setup.bash
 新しいパッケージを作成した直後は、必ず１回実行必要
 ```
 colcon build --packages-select lidar_monitor_pkg
+```
+```
 source install/setup.bash
 ```
 (source install/setup.bashを行うことで、この後実行するコマンドが このパッケージを認識します)
@@ -70,6 +74,8 @@ cd lidar_monitor_ros
 ```
 ```
 export ROS_WS_ROOT="$PWD"
+```
+```
 cd $ROS_WS_ROOT/src
 ```
 
