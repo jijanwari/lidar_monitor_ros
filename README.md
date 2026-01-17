@@ -48,6 +48,9 @@ source /opt/ros/jazzy/setup.bash
 colcon build --packages-select lidar_monitor_pkg
 ```
 ```
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Debug --packages-select lidar_monitor_pkg
+```
+```
 source install/setup.bash
 ```
 (source install/setup.bashを行うことで、この後実行するコマンドが このパッケージを認識します)
@@ -60,6 +63,8 @@ cp srcbkup/lidar_monitor_pkg/src/lidar_monitor.cpp src/lidar_monitor_pkg/src/lid
 ## 2.6. 本ビルド、このワークスペース専用の環境再読み込み
 ```
 colcon build --packages-select lidar_monitor_pkg
+```
+```
 source install/setup.bash
 ```
 新しいパッケージを作成した直後の初回ビルド後は　必ず source install/setup.bash を１回実行<br><br>
